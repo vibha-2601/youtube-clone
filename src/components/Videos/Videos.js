@@ -3,6 +3,7 @@ import React from 'react'
 import { VideoCard, ChannelCard } from '../'
 
 const Videos = ({ videos }) => {
+  console.log(videos)
   return (
     <Stack
     direction="row"
@@ -16,7 +17,7 @@ const Videos = ({ videos }) => {
           key={index}
           >
             {item.id.videoId && <VideoCard video={item} />}
-            {/* {item.id.channelId && <ChannelCard channelDetails={item} />} */}
+            {item.id.channelId && <ChannelCard channelDetails={item} />}
 
           </Box>
         ))
